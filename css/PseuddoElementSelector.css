@@ -1,0 +1,60 @@
+#btnparent > #btn{
+    height: 40px;
+    width: 70px;
+    background-color:beige;
+    color: blueviolet;
+    padding: 3px;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    font-size: 10px;
+
+}
+#btnparent > #btn:hover{
+    height: 40px;
+    width: 70px;
+    background-color:rgb(245, 200, 206);
+    color: rgb(28, 2, 53);
+    padding: 3px;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    font-size: 10px;
+
+}
+#activeparent > #active:active{
+    color:burlywood;
+}
+#gi::first-letter{
+    font-size: 30px;
+    color: rgb(92, 59, 123);
+}
+#gi::first-line{
+    color: salmon;
+}
+p::after{
+    content: "musko";
+    font-size: x-small;
+    color: sienna;
+}
+p::before{
+    content: "puski";
+    font-weight: 600;
+    color: seagreen;
+}
+li:first-child{
+    background-color:bisque;
+}
+li:last-child{
+    background-color: lemonchiffon;
+}
+div{
+    background-color: cornflowerblue;
+}
+span{
+    background-color: lavender;
+}
+#rui{
+    background-color: bisque;
+}
+#art{
+    background-color: chocolate;
+}

@@ -1,0 +1,47 @@
+p{
+    background-color: beige;
+    color: rgb(84, 39, 7);
+    height: 40px;
+    width: 200px;
+
+}
+#p1{
+    background-color: beige;
+    color: rgb(84, 39, 7);
+    height: 40px;
+    width: 200px;
+}
+#p2{
+    background-color: lightcyan;
+    color: rgb(84, 39, 7);
+    height: 40px;
+    width: 200px;
+}
+#p3{
+    background-color: lightpink;
+    color: rgb(84, 39, 7);
+    height: 40px;
+    width: 200px;
+}
+.classSelector{
+    background-color: rgb(238, 199, 191);
+    color: rgb(44, 13, 87);
+    height: 40px;
+    width: 200px;
+}
+#art1{
+    background-color: rgb(84, 39, 7);
+    color: rgb(205, 174, 152);
+}
+.art2{
+    background-color: rgb(17, 47, 2);
+    color: rgb(226, 198, 177);
+}
+*{
+    margin:0;
+    padding:0;
+}
+#p4, div, span{
+    background-color: rgb(145, 197, 199);
+    color:rgb(2, 59, 61)
+}

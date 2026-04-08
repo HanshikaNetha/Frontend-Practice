@@ -1,0 +1,18 @@
+#FighterJet > ul > li {
+    color: salmon;
+}
+#Biryani > ul > #rice , #Biryani > ul > #chicken {
+    color: salmon;
+}
+#Biryani > ul > #paneer{
+    color: skyblue;
+}
+#Biryani  #chicken-ul{
+    color: black;
+}
+#Lassi  #water + #sugar li{
+    color: salmon;
+}
+#wholeCon h1{
+    margin-left: 40px;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        header{
+            height: 25%;
+            width: 100%;
+            background-color: rgba(22, 10, 43, 0.9);
+        }
+        #topest{
+            height: 17%;
+            /* background-color: chartreuse; */
+            display: flex;
+        }
+        #caption{
+            height: 53%;
+            /* background-color: brown; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+        #search{
+            height: 30%;
+            /* width: 60%;
+            background-color: cornflowerblue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #logo_WeatherNow{
+            width: 90%;
+            height: 100%;
+            /* background-color: darkred; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+        }
+        #logo_WeatherNow > i{
+            margin-left: 5px;
+            margin-right: 7px;
+        }
+        #logo_WeatherNow >p{
+            color: white;
+            
+        }
+        #units{
+            width: 10%;
+            height: 100%;
+            /* background-color: crimson; */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        #units > select{
+            margin-right: 10px;
+            border: none;
+            background-color: rgb(68, 52, 97);
+            width: 70px;
+            height: 100%;
+            border-radius: 10px;
+            color: white;
+        }
+        #search > #searchbox{
+            width: 30%;
+            /* background-color: cornflowerblue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding-bottom: 20px;
+            
+        }
+        #search  #searchbar >input{
+            height: 30px;
+            width: 370px;
+            margin-right: 10px;
+            border-radius: 7px;
+            border: none;
+            padding-left: 10px;
+            background-color:  rgb(68, 52, 97);
+            color: white;
+        }
+        #search  #searchbutton > button{
+            border: none;
+            border-radius: 7px;
+            height: 30px;
+            width: 60px;
+            color: white;
+            background-color: rgb(99, 71, 152);
+        }
+
+
+        main{
+            height: 75%;
+            width: 100%;
+            background-color: rgba(22, 10, 43, 0.9);
+            display: flex;
+        }
+        #leftpanel{
+            flex: 3;
+            background-color: lightblue;
+        }
+        #rightpanel{
+            flex: 1;
+            /* background-color: lemonchiffon; */
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            margin-top: 5px;
+            margin-bottom: 7px;
+        }
+        #rightpanel > .one{
+            border: none;
+            width: 95%;
+            height: 45px;
+            border-radius: 5px;
+            background-color:  rgb(68, 52, 97);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #rightpanel > .one > .time{
+            padding-left: 15px;
+            display: flex;
+        }
+        #rightpanel > .one > .time >.cloud{
+            margin-right: 10px;
+        }
+        #rightpanel > .one > .temp{
+            padding-right: 15px;
+        }
+        #rightpanel > #HourlyForcast{
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+            height: 45px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="topest">
+            <div id="logo_WeatherNow">
+                <i class="fa-regular fa-sun"></i>
+                <p><strong>Weather Now</strong></p>
+            </div>
+            <div id="units">
+                <select>
+                    <option>Units</option>
+                    <option>Celsius</option>
+                    <option>Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <div id="caption">
+            How's the Sky looking today?
+        </div>
+        <div id="search">
+            <div id="searchbox">
+                <div id="searchbar">
+                    <label for="search"></label>
+                    <input type="text" id="search" placeholder="Search for a place...">
+                </div>
+                <div id="searchbutton">
+                    <button type="button">Search</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="leftpanel"></section>
+        <aside id="rightpanel">
+            <div id="HourlyForcast" class="one">Hourly forecast</div>
+            <div id="3pm" class="one">
+                <div class="time">
+                    <div class="cloud"><i class="fa-solid fa-cloud"></i></div>
+                    3 pm
+                </div>
+                <div class="temp">20°</div>
+            </div>
+            <div id="4pm" class="one">
+                <div class="time">
+                    <div class="cloud"><i class="fa-solid fa-cloud"></i></div>
+                     4 pm
+                </div>
+                <div class="temp">20°</div>
+            </div>
+            <div id="5pm" class="one">
+                <div class="time">
+                    <div class="cloud"><i class="fa-solid fa-cloud"></i></div>
+                    5 pm
+                </div>
+                <div class="temp">20°</div>
+            </div>
+            <div id="6pm" class="one">
+                <div class="time">
+                    <div class="cloud"><i class="fa-solid fa-cloud"></i></div>
+                    6 pm
+                </div>
+                <div class="temp">19°</div>
+            </div>
+            <div id="7pm" class="one">
+                <div class="time">
+                    <div class="cloud"><i class="fa-solid fa-cloud"></i></div>
+                    7 pm
+                </div>
+                <div class="temp">19°</div>
+            </div>
+            <div id="8pm" class="one">
+                <div class="time">
+                    <div class="cloud"><i class="fa-solid fa-cloud"></i></div>
+                    8 pm
+                </div>
+                <div class="temp">18°</div>
+            </div>
+            <div id="9pm" class="one">
+                <div class="time">
+                    <div class="cloud"><i class="fa-solid fa-cloud"></i></div>
+                    9 pm
+                </div>
+                <div class="temp">17°</div>
+            </div>
+            <div id="10pm" class="one">
+                <div class="time">
+                    <div class="cloud"><i class="fa-solid fa-cloud"></i></div>
+                    10 pm
+                </div>
+                <div class="temp">17°</div>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

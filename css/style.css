@@ -1,0 +1,9 @@
+@import url(./one.css);
+@import url(./two.css);
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(1, 46, 1);
+    line-height: 1.5;
+    background-color: rgb(188, 218, 188);
+}
