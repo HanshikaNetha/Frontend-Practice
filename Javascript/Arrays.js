@@ -48,26 +48,22 @@ let total=fem.concat(male)
 let arr=new Array(1,2,3,4,5)
 let arr1=Array(23, 34, 45, 56)
 let arr2=Array.of(45, 56, 67 ,78, 89)
+// console.log(arr.concat(arr1))
+
+// console.log(arr.join(","))
+// console.log(arr.join(""))
+// console.log(arr.join("@"))
+
+// console.log(arr.sort())//by default cnumbers are considered as string
+
+// console.log(arr.sort((a,b)=>a-b))
+// console.log(arr.sort((a,b)=>b-a))
+
+// console.log(arr.indexOf(4))
+
+let arr3=[[1,2,3,4,5],["hy","ku","julu"]]
+console.log(arr3.flat())
+
+console.log(arr3.flat().reverse())
 
 
-
-//onjects
-let obj={
-    mat:34,
-    sci:56,
-    eng:67,
-    soc:90,
-    hin:78,
-    com:67
-}
-console.log(obj)
-
-let obj1=Object({
-    mat:34,
-    sci:56,
-    eng:67,
-    soc:90,
-    hin:78,
-    com:67
-})
-console.log(obj1)

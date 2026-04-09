@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle 500px at top left, rgba(255, 0, 150, 0.5), transparent),
+        radial-gradient(circle 500px at bottom right, rgba(0, 200, 255, 0.5), transparent),
+        linear-gradient(to right, #243b6b, #2f5aa8);
+    color: white;
+        
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.149);
+    border-radius:10px;
+    margin: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.intro > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro > p {
+    opacity: 0.8;
+}
+
+.quotes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 20px 40px;
+    margin: 20px;
+}
+
+.quotes-container > .card {
+    background: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+}
+
+.card > span {
+    margin-top: 15px;
+    background: rgba(216, 226, 239, 0.959);
+    color: rgb(1, 39, 82);
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer {
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.149);
+    border-radius:10px;
+    margin: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    
+}
+
+.footer-links > a {
+    color: white;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.footer > #footer-text {
+    text-align: center;
+    font-size: 0.9rem;
+}
+

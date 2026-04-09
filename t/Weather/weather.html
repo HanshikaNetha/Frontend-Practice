@@ -5,160 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherPage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        html,body{
-            height: 100%;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-        }
-        header{
-            height: 25%;
-            width: 100%;
-            background-color: rgba(22, 10, 43, 0.9);
-        }
-        #topest{
-            height: 17%;
-            /* background-color: chartreuse; */
-            display: flex;
-        }
-        #caption{
-            height: 53%;
-            /* background-color: brown; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            color: white;
-        }
-        #search{
-            height: 30%;
-            /* width: 60%;
-            background-color: cornflowerblue; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        #logo_WeatherNow{
-            width: 90%;
-            height: 100%;
-            /* background-color: darkred; */
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            
-        }
-        #logo_WeatherNow > i{
-            margin-left: 5px;
-            margin-right: 7px;
-        }
-        #logo_WeatherNow >p{
-            color: white;
-            
-        }
-        #units{
-            width: 10%;
-            height: 100%;
-            /* background-color: crimson; */
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        #units > select{
-            margin-right: 10px;
-            border: none;
-            background-color: rgb(68, 52, 97);
-            width: 70px;
-            height: 100%;
-            border-radius: 10px;
-            color: white;
-        }
-        #search > #searchbox{
-            width: 30%;
-            /* background-color: cornflowerblue; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            padding-bottom: 20px;
-            
-        }
-        #search  #searchbar >input{
-            height: 30px;
-            width: 370px;
-            margin-right: 10px;
-            border-radius: 7px;
-            border: none;
-            padding-left: 10px;
-            background-color:  rgb(68, 52, 97);
-            color: white;
-        }
-        #search  #searchbutton > button{
-            border: none;
-            border-radius: 7px;
-            height: 30px;
-            width: 60px;
-            color: white;
-            background-color: rgb(99, 71, 152);
-        }
-
-
-        main{
-            height: 75%;
-            width: 100%;
-            background-color: rgba(22, 10, 43, 0.9);
-            display: flex;
-        }
-        #leftpanel{
-            flex: 3;
-            background-color: lightblue;
-        }
-        #rightpanel{
-            flex: 1;
-            /* background-color: lemonchiffon; */
-            flex-direction: column;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            justify-content: space-between;
-            margin-top: 5px;
-            margin-bottom: 7px;
-        }
-        #rightpanel > .one{
-            border: none;
-            width: 95%;
-            height: 45px;
-            border-radius: 5px;
-            background-color:  rgb(68, 52, 97);
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #rightpanel > .one > .time{
-            padding-left: 15px;
-            display: flex;
-        }
-        #rightpanel > .one > .time >.cloud{
-            margin-right: 10px;
-        }
-        #rightpanel > .one > .temp{
-            padding-right: 15px;
-        }
-        #rightpanel > #HourlyForcast{
-            color: white;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding-left: 20px;
-            height: 45px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="./weather.css">
 </head>
 <body>
     <header>
@@ -193,12 +40,109 @@
     </header>
 
     <main>
-        <section id="leftpanel"></section>
+        <section id="leftpanel">
+            <div id="blue">
+                <div id="location">
+                    <p id="place">Berlin, Germany</p>
+                    <p id="date">Sunday, Aug 1 2026</p>
+                </div>
+                <div id="deg">
+                    <i class="fa-regular fa-sun fa-2x"></i>
+                    <p id="degree">20°</p>
+                </div>
+            </div>
+
+            <div id="midle">
+                <div id="degr" class="box4">
+                    <div class="letters">Fahren</div>
+                    <div class="number">18°</div>
+                </div>
+                <div id="humid" class="box4">
+                    <div class="letters">Humidity</div>
+                    <div class="number">46%</div>
+                </div>
+                <div id="wind" class="box4">
+                    <div class="letters">Wind</div>
+                    <div class="number">14 km/h</div>
+                </div>
+                <div id="precipitation" class="box4">
+                    <div class="letters">Preciptation</div>
+                    <div class="number">0 mm</div>
+                </div>
+            </div>
+
+            <div id="last">
+                <div id="DailyForecast">
+                    <p>Daily Forecast</p>
+                </div>
+                <div id="weekBoxes">
+                    <div id="tue" class="daysOfWeek">
+                        <div class="day"><p>Tue</p></div>
+                        <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="te">
+                            <div class="min"><p>20°</p></div>
+                            <div class="max"><p>25°</p></div>
+                        </div>
+                    </div>
+                    <div id="wed" class="daysOfWeek">
+                        <div class="day"><p>Wed</p></div>
+                        <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="te">
+                            <div class="min"><p>20°</p></div>
+                            <div class="max"><p>25°</p></div>
+                        </div>
+                    </div>
+                    <div id="thu" class="daysOfWeek">
+                        <div class="day"><p>Thu</p></div>
+                        <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="te">
+                            <div class="min"><p>20°</p></div>
+                            <div class="max"><p>25°</p></div>
+                        </div>
+                    </div>
+                    <div id="fri" class="daysOfWeek">
+                        <div class="day"><p>Fri</p></div>
+                        <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="te">
+                            <div class="min"><p>20°</p></div>
+                            <div class="max"><p>25°</p></div>
+                        </div>
+                    </div>
+                    <div id="sat" class="daysOfWeek">
+                        <div class="day"><p>Sat</p></div>
+                        <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="te">
+                            <div class="min"><p>20°</p></div>
+                            <div class="max"><p>25°</p></div>
+                        </div>
+                    </div>
+                    <div id="sun" class="daysOfWeek">
+                        <div class="day"><p>Sun</p></div>
+                        <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="te">
+                            <div class="min"><p>20°</p></div>
+                            <div class="max"><p>25°</p></div>
+                        </div>
+                    </div>
+                    <div id="mon" class="daysOfWeek">
+                        <div class="day"><p>Mon</p></div>
+                        <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="te">
+                            <div class="min"><p>20°</p></div>
+                            <div class="max"><p>25°</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <aside id="rightpanel">
             <div id="HourlyForcast" class="one">Hourly forecast</div>
             <div id="3pm" class="one">
                 <div class="time">
-                    <div class="cloud"><i class="fa-solid fa-cloud"></i></div>
+                    <div class="cloud"><i class="fa-solid fa-cloud" style="color: white;"></i></div>
                     3 pm
                 </div>
                 <div class="temp">20°</div>

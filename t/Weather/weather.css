@@ -1,0 +1,316 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        header{
+            height: 25%;
+            width: 100%;
+            background-color: rgba(22, 10, 43, 0.9);
+        }
+        #topest{
+            height: 17%;
+            /* background-color: chartreuse; */
+            display: flex;
+        }
+        #caption{
+            height: 53%;
+            /* background-color: brown; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+        #search{
+            height: 30%;
+            /* width: 60%;
+            background-color: cornflowerblue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #logo_WeatherNow{
+            width: 90%;
+            height: 100%;
+            /* background-color: darkred; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+        }
+        #logo_WeatherNow > i{
+            margin-left: 5px;
+            margin-right: 7px;
+        }
+        #logo_WeatherNow >p{
+            color: white;
+            
+        }
+        #units{
+            width: 10%;
+            height: 100%;
+            /* background-color: crimson; */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        #units > select{
+            margin-right: 10px;
+            border: none;
+            background-color: rgb(68, 52, 97);
+            width: 70px;
+            height: 100%;
+            border-radius: 10px;
+            color: white;
+        }
+        #search > #searchbox{
+            width: 30%;
+            /* background-color: cornflowerblue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding-bottom: 20px;
+            
+        }
+        #search  #searchbar >input{
+            height: 30px;
+            width: 370px;
+            margin-right: 10px;
+            border-radius: 7px;
+            border: none;
+            padding-left: 10px;
+            background-color:  rgb(68, 52, 97);
+            color: white;
+        }
+        #search  #searchbutton > button{
+            border: none;
+            border-radius: 7px;
+            height: 30px;
+            width: 60px;
+            color: white;
+            background-color: rgb(99, 71, 152);
+        }
+
+
+        main{
+            height: 75%;
+            width: 100%;
+            /* background-color: rgba(22, 10, 43, 0.9); */
+            display: flex;
+        }
+        #leftpanel{
+            flex: 3;
+            background-color: rgba(22, 10, 43, 0.9);
+            display: flex;
+            flex-direction: column;
+        }
+        #rightpanel{
+            flex: 1;
+            background-color: rgba(22, 10, 43, 0.9);
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            /* margin-top: 5px;
+            margin-bottom: 7px; */
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #rightpanel > .one{
+            border: none;
+            width: 95%;
+            height: 45px;
+            border-radius: 5px;
+            background-color:  rgb(68, 52, 97);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #rightpanel > .one > .time{
+            padding-left: 15px;
+            display: flex;
+        }
+        #rightpanel > .one > .time >.cloud{
+            margin-right: 10px;
+        }
+        #rightpanel > .one > .temp{
+            padding-right: 15px;
+        }
+        #rightpanel > #HourlyForcast{
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+            height: 45px;
+
+        }
+
+
+        #leftpanel > #blue{
+            width: 95%;
+            height: 40%;
+            background-color: rgb(64, 101, 224);
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+        #leftpanel #location{
+            width: 50%;
+            height: 100%;
+            /* background-color: antiquewhite; */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 25px;
+        }
+        #leftpanel #location > #place{
+            font-size: xx-large;
+            color: white;
+            padding-bottom: 10px;
+        }
+        #leftpanel #location > #date{
+            font-size: larger;
+            color: white;
+            font-weight: 200;
+        }
+        #leftpanel #deg{
+            width: 50%;
+            height: 100%;
+            /* background-color: burlywood; */
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 25px;
+        }
+        
+        #leftpanel #deg > #degree{
+            padding-left: 20px;
+            font-size: 75px;
+            color: white;
+        }
+
+        #leftpanel > #midle{
+            width: 95%;
+            height: 25%;
+            /* background-color: darkviolet; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+             margin-left: 15px;
+           
+        }
+        #leftpanel > #midle > .box4{
+            width: 22%;
+            height: 95%;
+            background-color:  rgb(68, 52, 97);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        #leftpanel .box4 > .letters{
+            font-size: 14px;
+            padding-left: 15px;
+            padding-bottom: 10px;
+            color: white;
+        }
+        #leftpanel .box4 > .number{
+            font-size: 28px;
+            padding-left: 15px;
+            padding-top: 10px;
+            color: white;
+        }
+
+
+        #leftpanel > #last{
+            width: 95%;
+            height: 35%;
+            /* background-color: cornflowerblue; */
+             margin-left: 15px;
+            margin-right: 15px;
+        }
+        #leftpanel > #last > #DailyForecast{
+            width: 100%;
+            height: 15%;
+            /* background-color: coral; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;
+        }
+        #leftpanel #DailyForecast > p{
+            color: white;
+        }
+        #leftpanel > #last > #weekBoxes{
+            width: 100%;
+            height: 85%;
+            /* background-color: darkkhaki; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #leftpanel #weekBoxes > .daysOfWeek{
+            width: 13%;
+            height: 95%;
+            background-color:  rgb(68, 52, 97);
+            border-radius: 10px;
+            
+        }
+        #leftpanel .daysOfWeek > .day{
+            width: 100%;
+            height: 30%;
+            /* background-color:black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #leftpanel .daysOfWeek > .icon{
+            width: 100%;
+            height: 30%;
+            /* background-color: coral; */
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #leftpanel .daysOfWeek > .te{
+            width: 100%;
+            height: 30%;
+            /* background-color: cornflowerblue; */
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #leftpanel .daysOfWeek > .te > .min{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 15px;
+        }
+        #leftpanel .daysOfWeek > .te > .max{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 15px;
+        }
+
+        
