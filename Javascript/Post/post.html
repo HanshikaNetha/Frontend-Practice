@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increase likes in Post</title>
+    <style>
+        .actions {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px; 
+        }
+        button {
+            height: 60px;
+            width: 100px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;              
+            white-space: nowrap;  
+        }
+    </style>
+</head>
+<body>
+    <!-- create a post where the use coul be able to like the post and  you could be able to see the like that is increasing -->
+
+    <h1>Post</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2P3nrfs_QokAIKFoxTySn6U9MSWSVRkPyw&s" alt="post" height="200px" width="200px">
+    <br>
+    <div class="actions">
+    <button id="likebtn" style="height: 50px; width: 50px; font-size: 25px; border: none;" onclick="increaseLike()"><b>❤️</b></button>
+    <button id="dislikebtn" style="height: 50px; width: 50px; font-size: 25px; border: none;" onclick="increaseDislike()"><b>👎</b></button>
+    </div>
+
+
+
+
+     <script src="./post.js"></script>
+</body>
+</html>

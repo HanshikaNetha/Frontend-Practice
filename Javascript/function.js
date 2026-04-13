@@ -96,7 +96,7 @@ function sumofDigits(n){
     return n+sumofDigits(n-1)
     
 }
-console.log(sumofDigits(5))
+// console.log(sumofDigits(5))
 
 //factorial of a number
 function fact(n){
@@ -105,4 +105,13 @@ function fact(n){
     }
     return n*fact(n-1)
 }
-console.log("factorial of a number: ",fact(5))
+// console.log("factorial of a number: ",fact(5))
+
+//nested function
+function parent(v3, v4){
+    return function child(v1,v2){
+        return v1+v2+v3+v4
+    }
+}
+let fu=parent(10,20)(30,40)   //function curying
+console.log(fu)
