@@ -1,0 +1,33 @@
+<h1> my first angular app</h1>
+<h2>{{title}}</h2>
+
+@for(i of users; track i.name){
+  <div class="user-details">
+    <p>Name: {{i.name}}</p>
+    <p>Age: {{i.age}}</p>
+    <p>Address: {{i.address}}</p>
+    <p>Gender: {{i.gender}}</p>
+  </div>
+}
+@for(i of users; track i.name){
+  <div class="user-details" [class.bg-blue]="i.gender === 'male'" [class.bg-pink]="i.gender==='female'">
+    <p>Name: {{i.name}}</p>
+    <p>Age: {{i.age}}</p>
+    <p>Address: {{i.address}}</p>
+    <p>Gender: {{i.gender}}</p>
+    <img [src]="i.pic" alt="" [style.width.px]="30" [style.height.px]="30">
+    <img src="{{i.pic}}" alt="" style="width: 30px; height: 30px;">
+    <input type="text" disabled="{{i.edit}}" >
+    <input type="text" [disabled]="i.edit">
+
+    @if(i.gender==='male'){
+      <div>eligible for posting</div>
+    }
+    @else{
+      <div>not eligible for posting</div>
+    }
+
+  </div>
+}
+
+<router-outlet />

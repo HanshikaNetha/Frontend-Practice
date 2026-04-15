@@ -1,0 +1,11 @@
+.user-details{
+    background-color: antiquewhite;
+    width: 40%;
+    margin: 4px;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+} 
+.user-details.bg-blue { background-color: skyblue; }
+.user-details.bg-pink { background-color: pink; }

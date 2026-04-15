@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table id="laptops1">
+    <!-- <table id="laptops1">
         <tr>
             <th>ID</th>
             <th>Brand</th>
@@ -14,20 +14,31 @@
             <th>Price</th>
         </tr>
     </table>
-    <p onclick="displayLaptops()">show details</p>
+    <p onclick="displayLaptops()">show details</p> -->
 
-    <table id="laptops2">
+    <table id="laptops2"  border="2px">
         <thead>
             <tr>
                 <th>id</th>
                 <th>brand</th>
                 <th>model</th>
                 <th>price</th>
+   
             </tr>
         </thead>
         <tbody id="laptops2body"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" id="AllLike">like all</td>
+                <td colspan="3" id="AllDislike">dislike All</td>
+            </tr>
+            <tr>
+                <td colspan="3"><button id="showAll">ShowAll</button></td>
+                <td colspan="3"><button id="showLiked">Show Liked</button></td>
+            </tr>
+        </tfoot>
     </table>
-    <p onclick="displayLaptops2()">show laptops</p>
+    <button id="showbtn">clicke</button>
 
     <script src="./Laptopn.js"></script>
 </body>
