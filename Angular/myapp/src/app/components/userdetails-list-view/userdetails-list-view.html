@@ -1,0 +1,11 @@
+<div class="list-item">
+    
+    <td>Name: {{name}} </td>
+    <td>Age: {{age}}</td>
+    <td>Address: {{address}}</td>
+    <td>Gender: {{gender}}</td>
+    <td><button (click)="UpdateUser()">UpdateUser</button></td>
+    @if(update===true){
+        <input type="text" placeholder="enter current age" id="currentAge">
+    }
+</div>

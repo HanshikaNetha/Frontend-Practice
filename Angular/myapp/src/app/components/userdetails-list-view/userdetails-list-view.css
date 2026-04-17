@@ -1,0 +1,14 @@
+.list-item {
+  width: 100%;
+  /* background-color: azure; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+td{
+    text-align: left;
+    padding: 5px;
+    width: 300px;
+}
+

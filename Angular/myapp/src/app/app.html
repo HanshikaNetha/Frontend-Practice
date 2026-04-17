@@ -1,14 +1,19 @@
 <h1> my first angular app</h1>
 <h2>{{title}}</h2>
+<button (click)="changetitle()">click here-change title</button>
 
-@for(i of users; track i.name){
+
+
+<!-- @for(i of users; track i.name){
   <div class="user-details">
     <p>Name: {{i.name}}</p>
     <p>Age: {{i.age}}</p>
     <p>Address: {{i.address}}</p>
     <p>Gender: {{i.gender}}</p>
+
   </div>
-}
+} -->
+<!-- <div class="cont">
 @for(i of users; track i.name){
   <div class="user-details" [class.bg-blue]="i.gender === 'male'" [class.bg-pink]="i.gender==='female'">
     <p>Name: {{i.name}}</p>
@@ -18,16 +23,54 @@
     <img [src]="i.pic" alt="" [style.width.px]="30" [style.height.px]="30">
     <img src="{{i.pic}}" alt="" style="width: 30px; height: 30px;">
     <input type="text" disabled="{{i.edit}}" >
-    <input type="text" [disabled]="i.edit">
+     <input type="text" [disabled]="i.edit">
 
-    @if(i.gender==='male'){
+     @if(i.gender==='male'){
       <div>eligible for posting</div>
     }
     @else{
       <div>not eligible for posting</div>
     }
 
+    @switch(i.gender){
+      @case('male'){
+        <div>eligible for posting</div>
+      }
+      @case('female'){
+        <div>not eligible for posting</div>
+      }
+    }
+
   </div>
 }
+</div>  -->
 
+
+<br>
+<br>
+<button (click)="need='cardView'">SElect card view</button>
+<button (click)="need='listView'">SElect list view</button>
+
+@if(need==='cardView'){
+  <div>card view is selected</div>
+  <div class="cont">
+    @for(i of users; track i.name){
+      <app-user-details (onUpdate)="parentAction($event)" name={{i.name}} [age]="i.age" address={{i.address}} gender={{i.gender}} />
+    }
+  </div>
+}
+@else if(need==='listView'){
+  <div>list view is selected</div>
+  <table id="tab">
+    @for(i of users; track i.name){
+      <tr>
+        <app-userdetails-list-view (sendToParent)="updateUser($event)" name={{i.name}} [age]="i.age" address={{i.address}} gender={{i.gender}} />
+      </tr>
+    }
+  </table>
+  
+}
+
+
+<!-- <app-user-details name="name" [age]="22" address="address" gender='others'/> -->
 <router-outlet />
