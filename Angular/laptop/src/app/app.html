@@ -1,0 +1,22 @@
+<h2>{{title}}</h2>
+<!-- @for(i of laptops; track i.id){
+  <div class="laptop">
+    <p>id: {{i.id}}</p>
+    <p>name: {{i.name}}</p>
+    <p>price: {{i.price}}</p>
+    <p>model: {{i.model}}</p>
+  </div>
+} -->
+
+<p>Enter the title: <input type="text"  [(ngModel)]="title"></p>
+
+<div class="boxes">
+  @for(i of laptops.slice(this.currentindex, this.currentindex+this.pagesize); track i.id){
+    <app-laptop-as-object [laptopObj]="i" />
+  }
+</div>
+
+<button (click)="previous()" [disabled]="currentindex==0">Previous</button>
+<button (click)="next()" [disabled]="currentindex+pagesize>=laptops.length">next</button>
+
+<router-outlet />

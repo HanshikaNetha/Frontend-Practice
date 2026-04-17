@@ -1,0 +1,15 @@
+.boxes{
+    display: flex;
+    flex-direction: row;
+}
+.laptop{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(237, 218, 218);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 5px;
+    padding-left: 30px;
+}
