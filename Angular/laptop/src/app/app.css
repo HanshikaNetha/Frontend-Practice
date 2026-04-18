@@ -16,3 +16,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.highlighted{
+    background-color: yellow;
+}

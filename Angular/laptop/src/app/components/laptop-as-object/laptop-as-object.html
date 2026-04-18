@@ -1,8 +1,8 @@
 
 <div class="laptop">
-    <p>id: {{laptopObj.id}}</p>
-    <p>name: {{laptopObj.name}}</p>
-    <p>price: {{laptopObj.price}}</p>
+    <p>id: {{laptopObj.id | number:'3.1-2'}}</p>
+    <p>name: {{laptopObj.name | uppercase}}</p>
+    <p>price: {{laptopObj.price | currency:'INR'}}</p>
     <p>model: {{laptopObj.model}}</p>
     <!-- <button (click)="informParent()">update</button> -->
 </div>

@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LaptopAsObject } from './components/laptop-as-object/laptop-as-object';
 import { FormsModule } from '@angular/forms';
+import { DatePipe, JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LaptopAsObject, FormsModule],
+  imports: [RouterOutlet, LaptopAsObject, FormsModule, DatePipe, JsonPipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -49,4 +50,26 @@ export class App {
     this.laptops=this.laptops.slice(this.currentindex, this.currentindex+this.pagesize)
   }
 
+  today = new Date();
+
+  highlighted=false
+
+  highlight(){
+    this.highlighted=!this.highlighted
+  }
+
+  clr=""
+  highlight2(){
+    this.clr=this.clr=="pink"?"":"pink"
+  }
+
+  like="hello"
+  // changeValue(event: any){
+  //   console.log("event", event.target.value)
+  //   this.like=event.target.value
+  //   console.log()
+  // }
+
 }
+
+

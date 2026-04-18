@@ -1,13 +1,14 @@
 <h2>{{title}}</h2>
 <!-- @for(i of laptops; track i.id){
-  <div class="laptop">
+  <div class="laptop">` 
     <p>id: {{i.id}}</p>
     <p>name: {{i.name}}</p>
     <p>price: {{i.price}}</p>
     <p>model: {{i.model}}</p>
   </div>
 } -->
-
+<p>{{ today | date:'dd/MM/yyyy' }}</p>
+<p>{{laptops | json}}</p>
 <p>Enter the title: <input type="text"  [(ngModel)]="title"></p>
 
 <div class="boxes">
@@ -18,5 +19,14 @@
 
 <button (click)="previous()" [disabled]="currentindex==0">Previous</button>
 <button (click)="next()" [disabled]="currentindex+pagesize>=laptops.length">next</button>
+
+<br>
+
+<div (mouseover)="highlight()" [class.highlighted]="highlighted">huhuhu</div>
+<div (mouseover)="highlight2()" [style.background-color]="clr"> gui</div>
+
+<!-- <input type="text" [value]="like" (input)="changeValue($event)"> -->
+ <p>like: {{like}}</p>
+<input type="text" [(ngModel)]="like" >
 
 <router-outlet />

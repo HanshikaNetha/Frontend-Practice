@@ -1,8 +1,10 @@
+import {  CurrencyPipe, DecimalPipe, UpperCasePipe } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-laptop-as-object',
-  imports: [],
+  imports: [CurrencyPipe, UpperCasePipe, DecimalPipe],
   templateUrl: './laptop-as-object.html',
   styleUrl: './laptop-as-object.css',
 })
@@ -12,7 +14,8 @@ export class LaptopAsObject {
 
   constructor(){
     console.log("constructor")
-    console.log(this.laptopObj.id+" "+this.laptopObj.name+" "+this.laptopObj.price+" "+this.laptopObj.model)
+    // console.log(this.laptopObj.id+" "+this.laptopObj.name+" "+this.laptopObj.price+" "+this.laptopObj.model)
+    console.log("firstuser is "+JSON.stringify(this.laptopObj))
   }
   ngOnInit(){
     console.log("after intializtion the child ")

@@ -1,0 +1,9 @@
+.eachCust{
+    background-color: rgb(224, 214, 218);
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+    width: 450px;
+    height: 250px;
+    padding: 25px;
+}

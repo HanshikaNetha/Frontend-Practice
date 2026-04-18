@@ -1,0 +1,14 @@
+<div class="All">
+  @for(i of visibleCustomers(); track i.id){
+    <app-customers [customers]="i" />
+  }
+</div>
+
+<button (click)="previous()" [disabled]="currentindex==0">previous</button>
+<input type="number" [(ngModel)]="pagesize" placeholder="enter pageSize" (input)="changeValue()">
+<button (click)="next()" [disabled]="currentindex+pagesize>=editted.length">next</button>
+
+<input type="text" [(ngModel)]="searchValue" placeholder="search the name" (input)="searchedCustomers()">
+
+
+<router-outlet />
