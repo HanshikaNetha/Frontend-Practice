@@ -4,3 +4,21 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.page{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    width: 70px;
+    height: 40px;
+}
+h1{
+    text-align: center;
+}
+input{
+    text-align: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+}

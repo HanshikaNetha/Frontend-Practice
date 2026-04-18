@@ -1,17 +1,17 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Customers } from './components/customers/customers';
 import { FormsModule } from '@angular/forms';
-
+import { Customer } from './customer';
+import { Customers } from './components/customers/customers';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Customers, FormsModule],
+  imports: [RouterOutlet, FormsModule, Customers],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected  title = 'customerList';
-  customers=[
+  customers: Customer[]=[
     {id:101, name:"Deep", address:"dmm", email:"hani@gmail.com", phone:"1234567890", dob:new Date("2004-12-27"), gender:"female"},
     {id:102, name:"gui", address:"kurnool", email:"gui@gmail.com", phone:"1234567890", dob:new Date("2004-12-27"), gender:"male"},
     {id:103, name:"lui", address:"kadapa", email:"lui@gmail.com", phone:"1234567890", dob:new Date("2004-12-27"), gender:"male"},
