@@ -1,9 +1,14 @@
+
 <div class="eachCust">
-    <p>Id: {{customers.id}}</p>
-    <p>Name: {{customers.name}}</p>
-    <p>Address: {{customers.address}}</p>
-    <p>Email: {{customers.email}}</p>
-    <p>Phone: {{customers.phone}}</p>
-    <p>dob: {{customers.dob | date:'mediumDate'}}</p>
-    <p>Gender:{{customers.gender}}</p>
+    <table>
+        <tr>
+            <td id="id">{{customers.id}}</td>
+            <td id="name">{{customers.name}}</td>
+            <td id="address">{{customers.address}}</td>
+            <td id="email">{{customers.email}}</td>
+            <td id="phone">{{customers.phone}}</td>
+            <td id="dob">{{customers.dob | date:'mediumDate'}}</td>
+            <td id="gender">{{customers.gender}}</td>
+        </tr>
+    </table>
 </div>

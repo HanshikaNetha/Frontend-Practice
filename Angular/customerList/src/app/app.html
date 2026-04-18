@@ -2,11 +2,29 @@
 <div class="search">
   <input type="text" [(ngModel)]="searchValue" placeholder="search the name" (input)="searchedCustomers()" >
 </div>
-<div class="All">
-  @for(i of visibleCustomers(); track i.id){
-    <app-customers [customers]="i" />
-  }
+<div class="data">
+    
+<div class="eachCust">
+    
+    <table>
+        <tr>
+            <th id="id">Id</th>
+            <th id="name">Name</th>
+            <th id="address">Address</th>
+            <th id="email">Email</th>
+            <th id="phone">Phone</th>
+            <th id="dob">Date of Birth</th>
+            <th id="gender">Gender</th>
+        </tr>
+    </table>
 </div>
+  
+    @for(i of visibleCustomers(); track i.id){
+      <app-customers [customers]="i" />
+    }
+
+</div>
+
 
 <div class="page">
   <button (click)="previous()" [disabled]="currentindex==0">previous</button>
