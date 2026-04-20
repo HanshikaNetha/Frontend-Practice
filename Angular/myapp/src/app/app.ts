@@ -2,15 +2,18 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserDetails } from './components/user-details/user-details';
 import { UserdetailsListView } from './components/userdetails-list-view/userdetails-list-view';
+import { TruncatePipe } from '../TruncatePipe';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UserDetails, UserdetailsListView],
+  imports: [RouterOutlet, UserDetails, UserdetailsListView, TruncatePipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected title = 'myapp';
+  Description="hui gui mui nui hui lui pui yui fui rui tui yui wui eui oui poui hafbhbn nJHFV v HBjhbfhabzjbjzbbjhbbvjbhjbhbv  v vhbzbsjbfj"
+
   user={
     name:'HanshikaNetha',
     address:'dmm',

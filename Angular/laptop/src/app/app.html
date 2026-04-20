@@ -28,5 +28,17 @@
 <!-- <input type="text" [value]="like" (input)="changeValue($event)"> -->
  <p>like: {{like}}</p>
 <input type="text" [(ngModel)]="like" >
+<br>
+
+<p (click)="changeLength()">Description: {{Description | truncate: truncLength}}</p>
+
+
+<br>
+<br>
+<br>
+<div>custome directive</div>
+<p id="para" [apphighlight]>this is para with highlight action</p>
+<p id="para" [apphighlight]="'lightpink'"> this is para wiht highlight action of color</p>
+
 
 <router-outlet />

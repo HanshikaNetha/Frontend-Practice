@@ -1,17 +1,21 @@
-import { Component, signal } from '@angular/core';
+import { Component, ElementRef, signal, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LaptopAsObject } from './components/laptop-as-object/laptop-as-object';
 import { FormsModule } from '@angular/forms';
 import { DatePipe, JsonPipe } from '@angular/common';
+import { TruncatePipe } from './TruncatePipe';
+import { highlight } from './highlight';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LaptopAsObject, FormsModule, DatePipe, JsonPipe],
+  imports: [RouterOutlet, LaptopAsObject, FormsModule, DatePipe, JsonPipe, TruncatePipe, highlight],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected title = 'laptop';
+
+
 
   laptops=[
     {"id":101, "name":"dell", "price":300, "model":"abc"},
@@ -69,6 +73,21 @@ export class App {
   //   this.like=event.target.value
   //   console.log()
   // }
+
+
+  Description="hui gui mui nui hui lui pui yui fui rui tui yui wui eui oui poui hafbhbn nJHFV v HBjhbfhabzjbjzbbjhbbvjbhjbhbv  v vhbzbsjbfj"
+  truncLength=15
+  changeLength(){
+    if(this.truncLength!=this.Description.length){
+      this.truncLength=this.Description.length
+    }
+    else{
+      this.truncLength=15
+    }
+  }
+
+
+
 
 }
 
