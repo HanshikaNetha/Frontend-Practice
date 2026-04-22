@@ -1,0 +1,9 @@
+<div>
+	<div>in parent data</div>
+	<div>{{user.id}} : {{user.name}}</div>
+</div>
+<div>
+	<div>in child data</div>
+	<app-cdr-child [userObject]="user" />
+</div>
+<button (click)="changeData()">changedata</button>

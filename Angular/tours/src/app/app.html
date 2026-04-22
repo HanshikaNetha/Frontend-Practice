@@ -1,0 +1,9 @@
+<h1>Tours and Travels</h1>
+<div class="whole">
+  @for(i of iterinary; track i.id){
+    <app-iterinary [eachtour]="i"/>
+  }
+
+</div>
+
+<router-outlet />

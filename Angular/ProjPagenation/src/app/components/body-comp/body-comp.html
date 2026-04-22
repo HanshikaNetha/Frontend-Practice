@@ -1,0 +1,15 @@
+<div>
+    <table>
+        @for(i of cutomers; track i.id){
+            <tr>
+                <td id="id">{{i.id}}</td>
+                <td id="name">{{i.name}}</td>
+                <td id="address">{{i.address}}</td>
+                <td id="email">{{i.email}}</td>
+                <td id="phone">{{i.phone}}</td>
+                <td id="dob">{{i.dob | date:'mediumDate'}}</td>
+                <td id="gender">{{i.gender}}</td>
+            </tr>
+        }
+    </table>
+</div>

@@ -1,0 +1,8 @@
+
+<div>
+    <button (click)="emitPageevent(currentPage-1)" [disabled]="currentPage==1">Previous</button>
+    @for(num of numbers; track num){
+        <button [class.chnageclr]="currentPage==num" (click)="emitPageevent(num)">{{num}}</button>
+    }
+    <button (click)="emitPageevent(currentPage+1)" [disabled]="currentPage==max">next</button>
+</div>
