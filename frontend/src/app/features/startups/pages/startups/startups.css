@@ -1,0 +1,221 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.industry {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.desc {
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.status {
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.status.approved {
+  background: rgba(0,200,100,0.2);
+}
+
+.status.pending {
+  background: rgba(255,200,0,0.2);
+}
+
+.status.rejected {
+  background: rgba(255,80,80,0.2);
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.tabs button.active {
+  background: #2563eb;
+}
+
+.investments-btn {
+  background: #2563eb;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+.investments-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: 0.2s ease;
+}
+
+.investments-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.investments-btn:active {
+  transform: scale(0.95);
+}
+
+.investments-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.modal-card {
+  background: var(--bg-elevated);
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 500px;
+  border: 1px solid var(--border);
+}
+
+.modal-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.approve-btn {
+  background: #00c864;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reject-btn {
+  background: #ff5050;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.investment-card{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+/* Prev / Next */
+.pagination button {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Page numbers */
+.page-number {
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+/* Hover */
+.page-number:hover {
+  background: #333;
+}
+
+/* Active page */
+.page-number.active {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}

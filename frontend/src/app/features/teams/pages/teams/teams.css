@@ -1,0 +1,104 @@
+#teams {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Header */
+.header h2 {
+  color: var(--text-primary);
+}
+
+/* Card */
+.card {
+  background: var(--bg-elevated);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+/* Invite Form */
+.invite-form {
+  display: flex;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.invite-form input,
+.invite-form select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: white;
+}
+
+.invite-form button {
+  background: var(--primary);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* List */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.name {
+  font-weight: 600;
+}
+
+.role {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.status {
+  color: #00c864;
+}
+
+.empty-state {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Future buttons */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.accept-btn {
+  background: #00c864;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.reject-btn {
+  background: #ff5050;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  color: white;
+  border-radius: 5px;
+}

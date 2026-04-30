@@ -1,0 +1,127 @@
+/* Reuse dashboard layout */
+.full-width {
+  grid-column: span 2;
+}
+
+.dashboard-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inner-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs */
+.card input {
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Buttons */
+.card button {
+  margin-top: 0.7rem;
+  padding: 0.6rem;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card button:hover {
+  background: var(--primary-dark);
+}
+
+/* Result text */
+.result {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Input row (for fetch messages) */
+.input-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Messages list */
+.messages-list {
+  margin-top: 1rem;
+  max-height: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Message bubble */
+.message-item {
+  padding: 0.6rem;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+}
+
+/* Message text */
+.msg-content {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+/* Time */
+.msg-time {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+input{
+    width: 200px;
+}
+
+button{
+    height: 40px;
+    
+}
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-size: 0.85rem;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

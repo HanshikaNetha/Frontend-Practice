@@ -1,0 +1,115 @@
+#notifications {
+  padding: 1.5rem;
+}
+
+/* Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.page-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Empty */
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+}
+
+.empty-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* List */
+.notif-list {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Row */
+.notif-row {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+  transition: 0.2s;
+  pointer-events: auto;
+}
+
+.notif-row:hover {
+  background: var(--bg-elevated);
+}
+
+.notif-row.unread {
+  background: rgba(99, 102, 241, 0.08);
+}
+
+/* Icon */
+.notif-icon-wrap {
+  width: 40px;
+  height: 40px;
+  background: var(--bg-elevated);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content */
+.notif-content {
+  flex: 1;
+}
+
+.notif-title {
+  font-weight: 600;
+}
+
+.notif-message {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.notif-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+
+.invite-id {
+  font-size: 0.75rem;
+  color: #6366f1;
+  margin-top: 0.3rem;
+}
+
+/* Actions */
+.notif-actions button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.notif-actions button:hover {
+  background: #4f46e5;
+}

@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SearchComp } from './components/search-comp/search-comp';
+import { CdrParent } from './components/cdr-parent/cdr-parent';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, SearchComp],
+  imports: [RouterOutlet, SearchComp, CdrParent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

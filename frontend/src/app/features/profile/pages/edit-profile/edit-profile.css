@@ -1,0 +1,67 @@
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  color: white;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+input, textarea {
+  padding: 8px;
+  background: #000;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  background: #333;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}

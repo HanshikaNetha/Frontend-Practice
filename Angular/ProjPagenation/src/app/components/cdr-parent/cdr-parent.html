@@ -1,0 +1,8 @@
+<p>cdr-parent works!</p>
+
+<div (click)="increment()">count: {{count()}}</div>
+<div> this count() will subscribe to signal and on chnage, it will update the count</div>
+
+<app-cdr-child [count]="count()">
+    <h4>heading of the timer</h4>
+</app-cdr-child>

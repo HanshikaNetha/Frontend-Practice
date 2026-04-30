@@ -1,0 +1,46 @@
+<div id="dashboard">
+
+  <!-- Welcome -->
+  <div class="welcome-header">
+    <div>
+      <h2>Welcome Cofounder 👥</h2>
+      <p>Manage your teams and invitations</p>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <!-- <div class="stats-grid">
+    <div class="stat-card" *ngFor="let stat of stats">
+      <div class="stat-icon">{{ stat.icon }}</div>
+      <div>
+        <div class="stat-value">{{ stat.value }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Dashboard Content -->
+  <div class="dashboard-grid">
+
+    <!-- Quick Actions -->
+    <div class="card">
+      <h3>Quick Actions</h3>
+      <div class="quick-actions">
+        <a
+          *ngFor="let action of quickActions"
+          [routerLink]="action.path"
+          class="quick-action-btn"
+        >
+          <span>{{ action.icon }}</span>
+          <span>{{ action.label }}</span>
+        </a>
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+</div>

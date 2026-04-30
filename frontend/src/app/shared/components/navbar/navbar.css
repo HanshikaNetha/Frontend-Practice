@@ -1,0 +1,76 @@
+.navbar {
+  height: 60px;
+  background: #111827;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: fixed;
+  left: 220px;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+/* Right section */
+.right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Avatar */
+.avatar {
+  width: 35px;
+  height: 35px;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Name */
+.name {
+  font-size: 0.9rem;
+}
+
+.role {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #1f2937;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+/* Logout button */
+.logout-btn {
+  background: #ef4444;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}

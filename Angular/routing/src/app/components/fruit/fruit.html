@@ -1,0 +1,10 @@
+<p>fruit works!</p>
+<input type="text" [(ngModel)]="fruit">
+<button (click)="fruitService.addfruit(fruit)">add</button>
+
+<ol>
+    @for(i of fruitService.fruits(); track $index){
+        <p>{{i}}</p>
+    }
+</ol>
+  

@@ -1,7 +1,11 @@
 
 <div class="eachtour">
-    <h2>{{eachtour.place}}</h2>
-    <p>days: {{eachtour.days}}</p>
-    <p>cost: {{eachtour.cost}}</p>
-    <p #desc (click)="changeLenght()">description: {{eachtour.description | truncate: truncLength}}</p>
+    <div class="header" (click)="changeOpen()">
+        <h2>{{eachtour.place}}</h2>
+    </div>
+    @if(isSingleOpen){
+        <p>days: {{eachtour.days}}</p>
+        <p>cost: {{eachtour.cost}}</p>
+        <p #desc (click)="changeLenght()">description: {{eachtour.description | truncate: truncLength}}</p>
+    }
 </div>

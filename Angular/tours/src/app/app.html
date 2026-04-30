@@ -1,9 +1,32 @@
 <h1>Tours and Travels</h1>
+<div class="bu">
 <div class="whole">
   @for(i of iterinary; track i.id){
-    <app-iterinary [eachtour]="i"/>
+    <app-iterinary [eachtour]="i" [isAllOpen]="isAllOpen"/>
   }
 
 </div>
+<div class="buttons">
+  <button (click)="showall()">showall</button>
+  <button (click)="hideall()">hideall</button>
+</div>
+</div>
 
+ <div>
+        <form action="#" (ngSubmit)="onSubmit(tripForm)" #tripForm="ngForm" novalidate>
+            <input type="text" [(ngModel)]="trip.id" name="id"id="id" placeholder="id" required #tripidmodel="ngModel"><br>
+            @if(tripidmodel.invalid && tripidmodel.touched){
+                <div>error in input: {{tripidmodel.errors |json}}</div>
+            }
+            <input type="text" [(ngModel)]="trip.place" name="place"id="place" placeholder="place" #tripplacemodel="ngModel" required minlength="5"><br>
+            @if(tripplacemodel.invalid && tripplacemodel.touched){
+                <div>error in input: {{tripplacemodel.errors |json}}</div>
+            } 
+            <input type="text" [(ngModel)]="trip.description" name="description" id="description" placeholder="description" required minlength="5" #titleModel="ngModel"><br>
+            @if(titleModel.invalid && titleModel.touched){
+                <div>error in input: {{titleModel.errors |json}}</div>
+            }
+            <button type="submit" >add trip</button>
+        </form>
+    </div>
 <router-outlet />
